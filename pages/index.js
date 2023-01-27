@@ -1,25 +1,28 @@
 import Head from "next/head";
 import Image from "next/Image";
-import { Inter } from "@next/font/google";
+import { Inter, Odor_Mean_Chey } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import bg from "@/public/background-images/backgroundMountain.jpg";
 import Menu from "@/components/Menu/index.js";
 import Grad from "@/components/Grad/index.js";
-import Down from "@/components/Down/index.js"
+import arrow from "@/public/icons/down.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+
   return (
     <>
       <Head>
         <title>Home</title>
-        <meta name="author" content="MDIA 2109"/>
+        <meta name="author" content="MDIA 2109" />
         <meta property="og:title" content="Assignment #1 - Home Page" />
-        <meta property="og:description" content="BCIT Digital Design and Development Diploma" />
-        <link rel="icon" href="/favicon.ico" />
+        <meta
+          property="og:description"
+          content="BCIT Digital Design and Development Diploma"
+        />
+        <link rel="icon" href="/favicon.png" />
       </Head>
-
 
       <Image
         src={bg}
@@ -28,7 +31,6 @@ export default function Home() {
           zIndex: -100,
         }}
       />
-
 
       <main className={styles.main}>
         <div className={styles.header}>
@@ -63,19 +65,29 @@ export default function Home() {
             </p>
           </div>
 
-
           <div className={styles.contentbox__buttonsbox}>
             <a>
-            <button className={styles.contentbox__buttonsbox__button} name="More About Us">More About Us</button>
-            <button className={styles.contentbox__buttonsbox__button} name="Contact Us">Contact Us</button>
+              <button
+                className={styles.contentbox__buttonsbox__button}
+                name="More About Us"
+              >
+                More About Us
+              </button>
+              <button
+                className={styles.contentbox__buttonsbox__button}
+                name="Contact Us"
+              >
+                Contact Us
+              </button>
             </a>
           </div>
-
         </div>
-          
-          <div className={styles.arrow}>
-            <Down></Down>
-          </div>
+
+        <a className={styles.arrow} href="/about">
+          <span>
+              <Image src={arrow} width={40} height={60}/>
+          </span>
+        </a>
       </main>
     </>
   );

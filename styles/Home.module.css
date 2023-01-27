@@ -65,8 +65,9 @@
 
 .arrow {
     position: absolute;
-    right: 10vw;
+    right: 5.5vw;
     top: 75vh;
+    cursor: pointer;
 }
 
 
