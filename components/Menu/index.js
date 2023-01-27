@@ -1,5 +1,5 @@
 import styles from "@/components/Menu/Menu.module.css"
-import Image from "next/image"
+import Image from "next/Image"
 import hammy from "@/public/icons/menu-icon.png"
 
 export default function Menu() {

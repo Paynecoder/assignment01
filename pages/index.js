@@ -6,7 +6,6 @@ import bg from "@/public/background-images/backgroundMountain.jpg";
 import Menu from "@/components/Menu/index.js";
 import Grad from "@/components/Grad/index.js";
 import Down from "@/components/Down/index.js"
-import Link from "next/Link"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -66,8 +65,10 @@ export default function Home() {
 
 
           <div className={styles.contentbox__buttonsbox}>
+            <a>
             <button className={styles.contentbox__buttonsbox__button} name="More About Us">More About Us</button>
             <button className={styles.contentbox__buttonsbox__button} name="Contact Us">Contact Us</button>
+            </a>
           </div>
 
         </div>
@@ -75,9 +76,6 @@ export default function Home() {
           <div className={styles.arrow}>
             <Down></Down>
           </div>
-          
-
-
       </main>
     </>
   );
