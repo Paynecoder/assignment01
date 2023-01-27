@@ -64,10 +64,9 @@
 /*ARROWS*/
 
 .arrow {
-    margin-right: 7rem;
-    height: fit-content;
-    width: fit-content;
-    float: right;
+    position: absolute;
+    right: 10vw;
+    top: 75vh;
 }
 
 
@@ -95,14 +94,7 @@
         margin-top: 20vh;
         margin-left: 15vw;
         font-size: 0.75em;
-    }
-
-    .arrow {
-        margin-right: 5rem;
-        margin-top: 15rem;
-        height: fit-content;
-        width: fit-content;
-        float: right;
+        transition: font-size 0.25s ease-in
     }
 
     .header {
