@@ -1,0 +1,51 @@
+.menu {
+    color: var(--primary-color);
+    font-size: 1em;
+}
+
+.menu__bgwrap {
+    z-index: -15;
+}
+
+.menu__bg {
+    width: 18.75em;
+    height: 18.75em;
+}
+
+.menu__textwrap {
+    display: flex;
+    flex-direction: row;
+    gap: 5.75em;
+    margin-top: -15em;
+    margin-left: 3em;
+}
+
+.menu__exittext {
+    font-size: 3em;
+}
+
+.menu__exittext:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.menu__menutext__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25em;
+    list-style-type: none;
+    font-size: 1.5em;
+}
+@media screen and (max-width: 1000px) and (min-width: 600px) {
+    .menu {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .menu {
+        font-size: 0.65em;
+    }
+}
+
