@@ -2,8 +2,11 @@ import styles from "@/styles/About.module.css";
 import Menu from "@/components/Menu/index.js"
 import Grad from "@/components/Grad/index.js"
 import Head from "next/head";
+import { useState } from "react"
+import data from "@/data/data.json"
 
 export default function About() {
+    const [information, setInformation] = useState([data]);
   return (
     <>
     <Head>
