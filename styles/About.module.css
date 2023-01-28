@@ -1,6 +1,7 @@
 .main {
   height: 150vh;
   background-color: var(--quaternary-color);
+  
 }
 
 .header {
@@ -106,6 +107,9 @@
     text-align: left;
 }
 
+.carouselcontent {
+  display: flex;
+}
 
 /**MEDIA QUERIES*/
 

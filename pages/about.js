@@ -4,8 +4,15 @@ import Menu from "@/components/Menu/index.js";
 import Grad from "@/components/Grad/index.js";
 import Head from "next/head";
 import Image from "next/Image";
+import data from "@/data/data.json"
+import { useState, useEffect } from "react"
+import leftar from "@/public/icons/leftArrow.png"
+import rightar from "@/public/icons/rightArrow.png"
 
 export default function About() {
+  const [SlideID, setSlideID] = useState(0);
+  const [caption, setCaption] = useState([]);
+
   return (
     <>
       <Head>
@@ -85,18 +92,33 @@ export default function About() {
                 taste of campus life.
               </p>
             </div>
-            <div
-              id="carouselImage"
-              style={{
-                height: "200px",
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                margin: "40px 0px",
-                outline: "1px solid black"
-              }}>
+          </div>
+          <div
+            id="carouselImage"
+            style={{
+              height: "200px",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              margin: "40px 0px",
+              width: "500px",
+              outline: "1px solid black",
+            }}
+          >
+            <div className={styles.carouselcontent}>
+              <Image src={leftar} width={50}/>
+                <div
+                  id="testOnImageHere"
+                  style={{
+                    backgroundColor: "var(--quinary-color)",
+                    padding: "10px",
+                    margin: "0px 50px",
+                  }}>
+                  p
+                </div>
+              <Image src={rightar} width={50}/>
             </div>
           </div>
         </div>
