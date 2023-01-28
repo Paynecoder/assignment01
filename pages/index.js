@@ -6,10 +6,12 @@ import bg from "@/public/background-images/backgroundMountain.jpg";
 import Menu from "@/components/Menu/index.js";
 import Grad from "@/components/Grad/index.js";
 import arrow from "@/public/icons/down.png";
+import { useRouter } from 'next/router'
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const router = useRouter()
 
   return (
     <>
@@ -34,8 +36,8 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={styles.header}>
-          <Menu className={styles.header__menu}></Menu>
-          <Grad className={styles.header__grad}></Grad>
+          <Menu></Menu>
+          <Grad></Grad>
         </div>
 
         <div className={styles.contentbox}>
@@ -70,12 +72,14 @@ export default function Home() {
               <button
                 className={styles.contentbox__buttonsbox__button}
                 name="More About Us"
+                onClick={() => router.push('http://localhost:3000/about')}
               >
                 More About Us
               </button>
               <button
                 className={styles.contentbox__buttonsbox__button}
                 name="Contact Us"
+                onClick={() => router.push('http://localhost:3000/contact')}
               >
                 Contact Us
               </button>
