@@ -101,8 +101,22 @@ a {
   text-decoration: none;
 }
 
+::-webkit-scrollbar-track {
+  background: var(--ternary-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--quaternary-color);
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
 }
+
+

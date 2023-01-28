@@ -1,5 +1,5 @@
 .main {
-  height: 100vh;
+  height: 150vh;
   background-color: var(--quaternary-color);
 }
 
@@ -18,7 +18,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 8rem;
+  margin-top: 9rem;
 }
 
 .main__content__about {
@@ -107,9 +107,6 @@
 }
 
 
-
-
-
 /**MEDIA QUERIES*/
 
 /**DESKTOP*/
@@ -140,5 +137,6 @@
 
   .content {
     margin-left: 1em;
+    margin-right: 1em;
   }
 }
