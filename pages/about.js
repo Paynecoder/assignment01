@@ -10,6 +10,7 @@ import leftar from "@/public/icons/leftArrow.png";
 import rightar from "@/public/icons/rightArrow.png";
 import upar from "@/public/icons/upwardArrow.png";
 import downar from "@/public/icons/down.png";
+import { useRouter } from 'next/router'
 
 export default function About() {
   const [SlideID, setSlideID] = useState(0);
@@ -35,6 +36,8 @@ export default function About() {
       }
     }
   };
+
+  const router = useRouter()
 
   return (
     <>
@@ -194,8 +197,8 @@ export default function About() {
         </div>
         <a>
           <span className={styles.arrowcontain}>
-            <Image src={upar} className={styles.arrowup} />
-            <Image src={downar} className={styles.downar} />
+            <Image src={upar} className={styles.arrowup} onClick={() => router.push('http://localhost:3000/')}/>
+            <Image src={downar} className={styles.downar} onClick={() => router.push('http://localhost:3000/contact')}/>
           </span>
         </a>
       </main>
