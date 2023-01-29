@@ -1,5 +1,5 @@
 .main {
-  height: 150vh;
+  height: 200vh;
   background-color: var(--quaternary-color);
   
 }
@@ -109,6 +109,72 @@
 
 .carouselcontent {
   display: flex;
+  flex-direction: row;
+}
+
+.content__carousel {
+  margin-top: 5em;
+}
+
+
+.content__carouselimage {
+  position: absolute;
+  margin-top: 2.5em;
+  z-index: -0;
+  height: 12.5em;
+  width: 31.25em;
+}
+
+.content__departments {
+  display: flex;
+  flex-direction: row;
+  gap: 9em;
+  margin-top: 5em;
+}
+
+.content__departments > h1 {
+  color: var(--primary-color);
+  line-height: 0px;
+}
+
+.content__departments > div {
+  background-color: var(--secondary-color);
+  height: 5px;
+  border-radius: 50px;
+  width: 25vw;
+}
+
+.content__departments__list {
+  margin-top: 5em;
+}
+
+.content__departments__list > ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  color: var(--primary-color);
+  font-weight: 300;
+  font-size: 1em;
+  gap: 1.5em;
+}
+
+.arrowcontain {
+  bottom: 5em;
+  right: 5em;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.arrowup {
+  width: 2em;
+  height: 3em;
+}
+
+.downar {
+  width: 2em;
+  height: 3em;
 }
 
 /**MEDIA QUERIES*/
@@ -139,8 +205,26 @@
     gap: 2em;
   }
 
+  
+  .content__departments {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+  }
+
   .content {
     margin-left: 1em;
     margin-right: 1em;
   }
+
+  .content > div {
+    text-align: center;
+  }
+
+  
+.content__carouselimage {
+  height: 10.5em;
+  width: 24.5em;
+  margin-left: 3.25em;
+}
 }

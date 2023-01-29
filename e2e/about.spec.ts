@@ -149,7 +149,7 @@ test.describe('Carousel area', () => {
 
     test('Should contain an unordered list of information', async ({ page }) => {
         await page.goto(urlAbout)
-        await expect(page.locator('ul > li')).toContainText(["Applied & Natural Sciences", "Business & Media", "Computing & IT", "Engineerin", "Health Sciences", "Trades & Apprenticeships"]);
+        await expect(page.locator('ul > li')).toContainText(["Applied & Natural Sciences", "Business & Media", "Computing & IT", "Engineering", "Health Sciences", "Trades & Apprenticeships"]);
     })
 })
 
