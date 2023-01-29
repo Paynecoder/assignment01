@@ -167,6 +167,10 @@
   gap: 0.5em;
 }
 
+.arrowcontain:hover {
+  cursor: pointer;
+}
+
 .arrowup {
   width: 2em;
   height: 3em;
