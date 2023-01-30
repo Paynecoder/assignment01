@@ -4,7 +4,7 @@ import styles from "@/styles/Contact.module.css";
 import Menu from "@/components/Menu/index.js";
 import Grad from "@/components/Grad/index.js";
 import bg from "@/public/background-images/backgroundMountainUpsideDown.jpg";
-import { useRouter } from 'next/router'
+import { useRouter } from "next/router";
 import arrow from "@/public/icons/upwardArrow.png";
 
 export default function Contact() {
@@ -44,14 +44,31 @@ export default function Contact() {
           <div className={styles.main__content__contactbox}>
             <p>Want to discuss? Lets chat!</p>
             <div className={styles.contactbox__container}>
+              <form className={styles.contactbox__form}>
+                <fieldset className={styles.contactbox__fieldset}>
+                  <table className={styles.contactbox__table}>
+                    <thead className={styles.theadtop}>
+                      First Name:
+                     <tr className={styles.firstrow}>
+                        <input placeholder="First Name Here"></input>
+                        <input placeholder="Last Name Here"></input>
+                      </tr>
+                    </thead>
+                    <thead className={styles.theadbtm}>
+                      Email:
+                      <tr className={styles.secondrow}>
+                        <input placeholder="Email Here"></input>
+                      </tr>
+                    </thead>
+                  </table>
+                </fieldset>
+              </form>
             </div>
           </div>
         </div>
         <a href="/about">
           <span>
-            <Image
-            src={arrow}
-            className={styles.arrow}/>
+            <Image src={arrow} className={styles.arrow} />
           </span>
         </a>
       </main>

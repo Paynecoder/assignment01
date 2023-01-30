@@ -61,11 +61,49 @@
   justify-content: center;
 }
 
+.contactbox__fieldset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12em;
+  width: 40em;
+  outline: 1px solid black;
+}
+
+.firstrow {
+  display: flex;
+  gap: 0.05em;
+}
+
+.firstrow > input {
+  width: 18rem;
+  padding: 1px;
+  padding-left: 2px;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.secondrow > input {
+  width: 36rem;
+  padding: 1px;
+  padding-left: 2px;
+  margin-top: 0.5em;
+}
+
+.theadtop {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.theadbtm {
+  color: var(--primary-color);
+  font-weight: 600;
+}
 /*ARROWS */
 .arrow {
   position: absolute;
   right: 6.5vw;
-  top: 75vh;
+  top: 85vh;
   cursor: pointer;
   animation-name: floating;
   animation-duration: 3s;
@@ -109,9 +147,88 @@
     margin-right: 2.5rem;
   }
 
+  .contactbox__form {
+    font-size: 1em;
+  }
+
   .main__content__title {
     display: flex;
     flex-direction: row;
     gap: 2em;
   }
+
+  .contactbox__container {
+    max-height: 12em;
+    width: 40em;
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contactbox__fieldset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12rem;
+    width: 20em;
+    margin-left: 2em;
+    outline: 1px solid black;
+  }
+  
+  .firstrow {
+    display: flex;
+    gap: 0.05em;
+  }
+  
+  .firstrow > input {
+    width: 12.5em;
+    padding: 1px;
+    padding-left: 2px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  .secondrow > input {
+    width: 25em;
+    padding: 1px;
+    padding-left: 2px;
+    margin-top: 0.5em;
+  }
+  
+  .theadtop {
+    color: var(--primary-color);
+    font-weight: 600;
+  }
+  
+  .theadbtm {
+    color: var(--primary-color);
+    font-weight: 600;
+  }
+
+  .contactbox__table {
+    padding: 1em;
+  }
+
+  .main__content__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    word-wrap: break-word;
+    margin-left: 1em;
+  }
+  
+  .main__content__title > h1 {
+    color: var(--primary-color);
+    line-height: 0px;
+  }
+  
+  .main__content__title > div {
+    background-color: var(--secondary-color);
+    height: 5px;
+    border-radius: 50px;
+    width: 3em;
+  }
+  
 }
