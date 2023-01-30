@@ -72,15 +72,16 @@
 
 .firstrow {
   display: flex;
-  gap: 0.05em;
+  gap: 0.25em;
 }
 
 .firstrow > input {
-  width: 18rem;
+  width: 17.9rem;
   padding: 1px;
   padding-left: 2px;
   margin-top: 1em;
   margin-bottom: 0.5em;
+  border: none;
 }
 
 .secondrow > input {
@@ -88,6 +89,7 @@
   padding: 1px;
   padding-left: 2px;
   margin-top: 0.5em;
+  border: none;
 }
 
 .theadtop {
@@ -95,9 +97,15 @@
   font-weight: 600;
 }
 
+
 .theadbtm {
   color: var(--primary-color);
   font-weight: 600;
+}
+
+.lastname {
+  display: flex;
+  flex-direction: column;
 }
 /*ARROWS */
 .arrow {
@@ -177,11 +185,11 @@
   
   .firstrow {
     display: flex;
-    gap: 0.05em;
+    gap: 0.5em;
   }
   
   .firstrow > input {
-    width: 12.5em;
+    width: 12.1em;
     padding: 1px;
     padding-left: 2px;
     margin-top: 0.5em;
