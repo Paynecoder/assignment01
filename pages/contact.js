@@ -5,7 +5,8 @@ import Menu from "@/components/Menu/index.js";
 import Grad from "@/components/Grad/index.js";
 import bg from "@/public/background-images/backgroundMountainUpsideDown.jpg";
 import arrow from "@/public/icons/upwardArrow.png";
-import { use, useState } from "react";
+import { useState } from "react";
+import { useRouter } from "next/router";
 
 export default function Contact() {
   const [first, setFirst] = useState("");
@@ -15,13 +16,15 @@ export default function Contact() {
   const [email, setEmail] = useState("");
   const [emailWarning, setEmailWarning] = useState("");
 
+  const router = useRouter();
+
   const hasWarnings =
     firstWarning !== "" ||
-    first.length < 1 ||
+    first.length < 2 ||
     lastWarning !== "" ||
-    last.length < 1 ||
+    last.length < 2 ||
     emailWarning !== "" ||
-    email.length < 1;
+    email.length < 2;
 
   function handleFirst(event) {
     var input = event.target.value;
@@ -143,13 +146,16 @@ export default function Contact() {
                 </fieldset>
                 <div className={styles.feedback}>
                   <div className={styles.feedback__warnings}>
-                    <p style={{ color: "red" }}>{firstWarning}</p>
-                    <p style={{ color: "red" }}>{lastWarning}</p>
-                    <p style={{ color: "red" }}>{emailWarning}</p>
+                    <h5 style={{ color: "red" }}>{firstWarning}</h5>
+                    <h5 style={{ color: "red" }}>{lastWarning}</h5>
+                    <h5 style={{ color: "red" }}>{emailWarning}</h5>
                   </div>
                   <div className={styles.feedback__buttonwrapper}>
                     {!hasWarnings && (
-                      <button className={styles.feedback__button}>
+                      <button
+                        className={styles.feedback__button}
+                        onClick={() => router.push("http://localhost:3000/")}
+                      >
                         Submit
                       </button>
                     )}
