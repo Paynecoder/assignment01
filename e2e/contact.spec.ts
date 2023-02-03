@@ -90,23 +90,6 @@ test.describe('Main area', () => {
         const firstName = await page.locator('input#firstName');
         const lastName = await page.locator('input#lastName');
         const email = await page.locator('input#email');
-
-        //expect(firstName).toHaveAttribute("placeholder", "First Name Here");
-
-        //const firstName = await page.locator('input#firstName').type('Person', {delay: 50});
-        //const lastName = await page.locator('input#lastName').type('Person', {delay: 50});
-        //const email = await page.locator('input#email').type('test@test.com', {delay: 50});
-
-        //await expect(firstName).toEqual("Person");
-
-        // await expect(email).toBe("test@test.com")
-        
-        // await page.waitForSelector('button');
-        // await page.locator('button:text("Submit")').click();
-
-        // await page.locator('button:text("Submit")').click();
-        // const formButton = await page.getByRole('button');
-        // await expect(formButton).toContainText("Submit");
     })
 })
 

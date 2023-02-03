@@ -13,14 +13,20 @@ export default function Menu() {
       <>
         <div className={styles.menu}>
           <div className={styles.menu__bgwrap}>
-            <Image src={menubg} className={styles.menu__bg} />
+            <Image
+              src={menubg}
+              className={styles.menu__bg}
+              alt="popmenubackground"
+            />
           </div>
           <div className={styles.menu__textwrap}>
             <div className={styles.menu__textexit}>
               <h1
                 className={styles.menu__exittext}
-                onClick={() => setIsActive(!isActive)}>
-            x</h1>
+                onClick={() => setIsActive(!isActive)}
+              >
+                x
+              </h1>
             </div>
             <div className={styles.menu__menutext}>
               <ul className={styles.menu__menutext__list}>
@@ -46,6 +52,7 @@ export default function Menu() {
           src={hammy}
           style={{ width: "70px", height: "55px", cursor: "pointer" }}
           onClick={() => setIsActive(!isActive)}
+          alt="hamburgermenuicon"
         />
       </>
     );
